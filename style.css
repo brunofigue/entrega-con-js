@@ -49,3 +49,28 @@
     padding: 10px;
     cursor: pointer;
   }
+
+
+
+  .contador {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  #tiempo-restante {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    opacity: 8.5;
+    cursor: not-allowed;
+  }

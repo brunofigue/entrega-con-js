@@ -20,4 +20,34 @@ galeria.addEventListener('click', (e) => {
 imagenCompleta.querySelector('.cerrar').addEventListener('click', () => {
   // Oculta el contenedor de la imagen completa
   imagenCompleta.style.display = 'none';
+imagenCompleta.onclick =() => document.exitFullscreen();
+
 });
+let tiempoRestante = 600; // 10 minutos en segundos
+let intervalo;
+
+document.getElementById('iniciar-contador').addEventListener('click', iniciarContador);
+document.getElementById('detener-contador').addEventListener('click', detenerContador);
+
+function iniciarContador() {
+  intervalo = setInterval(contarRegresiva, 1000);
+  document.getElementById('iniciar-contador').disabled = true;
+  document.getElementById('detener-contador').disabled = false;
+}
+
+function detenerContador() {
+  clearInterval(intervalo);
+  document.getElementById('iniciar-contador').disabled = false;
+  document.getElementById('detener-contador').disabled = true;
+}
+
+function contarRegresiva() {
+  tiempoRestante--;
+  let minutos = Math.floor(tiempoRestante / 60);
+  let segundos = tiempoRestante % 60;
+  document.getElementById('tiempo-restante').innerText = `${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+  if (tiempoRestante <= 0) {
+    clearInterval(intervalo);
+    alert('Tiempo agotado!');
+  }
+}
