@@ -9,6 +9,13 @@
     height: 150px;
     margin: 10px;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .galeria img:hover {
+    transform: scale(4.1);
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   .imagen-completa {
@@ -22,9 +29,9 @@
   }
   
   .imagen-completa-src {
-    width: 100%;
+    width:  100%;
     height: 100%;
-    margin: 10% auto;
+    margin: 0% auto;
   }
   
   .cerrar {
