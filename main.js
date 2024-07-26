@@ -23,6 +23,10 @@ imagenCompleta.querySelector('.cerrar').addEventListener('click', () => {
 imagenCompleta.onclick =() => document.exitFullscreen();
 
 });
+
+
+
+
 let tiempoRestante = 600; // 10 minutos en segundos
 let intervalo;
 
