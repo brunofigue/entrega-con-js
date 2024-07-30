@@ -23,7 +23,7 @@ header {
 }
 
 #carouselExample{
-  display: flex;
+  
   overflow: hidden;
 }
  
