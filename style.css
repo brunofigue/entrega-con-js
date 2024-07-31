@@ -1,40 +1,44 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 header {
+  background: linear-gradient(to right, #ffffff, #b9b8b8);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 100px;
   
-
 }
+
+
 .contenedor {
   display: flex;
   gap: 80px;
+  text-decoration:underline;
+  
 
 }
 .contenedor > a {
   text-decoration: none;
+  color: rgba(20, 19, 19, 0.315);
   font-size: 30px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-
-#carouselExample{
-  
-  overflow: hidden;
-}
- 
-
-.carousel-inner {
-  position: relative;
-  top: 0;
-  left: 0;
+footer {
+  display: flex;
   width: 100%;
-  height: 100%;
-  transition: transform 1s ease-in-out;
-
+  height: 20px;
+  padding: 100px;
+  margin: 0px;
+  background-color: black;
+  color: white;
+  text-align:end;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
