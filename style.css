@@ -8,7 +8,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 
@@ -16,8 +15,6 @@ header {
   display: flex;
   gap: 80px;
   text-decoration:underline;
-  
-
 }
 .cards {
  
@@ -27,19 +24,23 @@ header {
   justify-content: space-around;
   object-fit: cover;
  
-  
 }
 
 .tarjeta{
   display:flex;
   flex-direction:column;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(231, 230, 230);
   box-shadow: 1px 2px 8px 4px #d3d3d3d1;
   border-radius:15px;
   font-family: sans-serif;
   transform: scale(0.8);
-  
-    
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.tarjeta:hover {
+  transform: scale(1);
 }
 
 .titulo{
@@ -51,7 +52,6 @@ header {
 .cuerpo{
      padding: 30px;
      font-size:x-large;
-     
 
     }
 .pie{
