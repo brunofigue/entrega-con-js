@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 header {
   background: linear-gradient(to right, #ffffff, #b9b8b8);
@@ -10,67 +9,61 @@ header {
   justify-content: space-between;
 }
 
-
 .contenedor {
   display: flex;
   gap: 80px;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 .cards {
- 
   display: flex;
   padding: 3px;
   gap: 20px;
   justify-content: space-around;
   object-fit: cover;
- 
 }
 
-.tarjeta{
-  display:flex;
-  flex-direction:column;
+.tarjeta {
+  display: flex;
+  flex-direction: column;
   border: 1px solid rgb(231, 230, 230);
   box-shadow: 1px 2px 8px 4px #d3d3d3d1;
-  border-radius:15px;
+  border-radius: 15px;
   font-family: sans-serif;
   transform: scale(0.8);
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
-
 }
 
 .tarjeta:hover {
   transform: scale(1);
 }
 
-.titulo{
-     font-size: 30px;
-     text-align: center;
-     font-weight: bold;
-     padding: 10px 10px 0 10px;;
+.titulo {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 10px 0 10px;
 }
-.cuerpo{
-     padding: 30px;
-     font-size:x-large;
+.cuerpo {
+  padding: 30px;
+  font-size: x-large;
+}
+.pie {
+  background: #6e6e6e;
+  border-radius: 0 0 15px 15px;
+  padding: 15px;
+  text-align: center;
+}
+.pie a {
+  text-decoration: none;
+  color: white;
+}
 
-    }
-.pie{
-     background: #6e6e6e;
-     border-radius:0 0 15px 15px;
-     padding: 15px;
-     text-align:center;
-}
-.pie a{
-     text-decoration: none;
-     color: white;
-    }
-   
 .contenedor > a {
   text-decoration: none;
   color: rgba(20, 19, 19, 0.315);
   font-size: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 footer {
   display: flex;
@@ -80,11 +73,25 @@ footer {
   margin: 0px;
   background-color: black;
   color: white;
-  text-align:end;
+  text-align: end;
   font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.directions-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 10%;
+  flex-wrap: wrap;
+}
+
+.direction-card {
+  width: 23%;
+}
+
+.direction-card > img {
+  width: 100%;
+}
