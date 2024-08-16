@@ -1,6 +1,14 @@
 /* Estilos para el formulario */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg,#bac7d3,#587da0,#043869,#000c18 );
+}
+
 form {
-    width: 50%;
+    width: 30%;
     margin: 40px auto;
     padding: 20px;
     border: 1px solid #ccc;

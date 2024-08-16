@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 header {
   background: linear-gradient(to right, #ffffff, #b9b8b8);
@@ -8,7 +9,34 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+main {
+ padding: 0;
+  background: linear-gradient(45deg,#eff0f1,#7f8b97,#4c4e50,#5b6064 );
+  background-size: 600% 600%;
+  animation: color 6s infinite ease-in-out;
+}
+main > h3 {
+  font-size: 25px;
+  color: #000c18;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+@keyframes color {
+ 
+  0% {background-position: 0% 50%;}
+ 
+  50% {background-position: 100% 50%;}
+  
+  100% {background-position: 0% 50%;}
+}
+.explorar {
+  font-size: x-large;
+  color: #ffffff;
+  padding: 10px 20px;
+  
+  
 
+}
 .contenedor {
   display: flex;
   gap: 80px;
@@ -33,11 +61,9 @@ header {
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
 }
-
 .tarjeta:hover {
   transform: scale(1);
 }
-
 .titulo {
   font-size: 30px;
   text-align: center;
