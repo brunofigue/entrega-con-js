@@ -1,0 +1,38 @@
+@media (max-width: 650px) {
+    header {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 843px) {
+    .contenedor {
+      display: none;  
+
+    }
+
+
+}
+@media (max-width: 985px ) {
+    .navigator {
+        display: none;
+}
+
+}
+
+@media (max-width: 480px ) {
+    .cards {
+       display: block;
+}
+
+
+}
+@media (max-width: 480px ) {
+    footer{
+        display: none;
+        
+}
+
+}
+
+
