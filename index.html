@@ -10,22 +10,23 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/index.media-queris.css">
+    <link rel="stylesheet" href="./css/index.media-queris.css" />
   </head>
   <body>
     <!-- navegadores por el header-->
     <header>
-      <a href="#"><img src="./assets/logo nuevo.png" alt="" /></a>
-      <nav class="contenedor">
+      <div class="header-icon">
+        <a href="#"><img class="logo-image" src="./assets/logo nuevo.png" alt="" /></a>
+        <button class="open-nav-btn" id="openNavBtn">Abrir</button>
+      </div>
+
+      <nav class="nav-container" id="navContainer">
         <a href="">Contacto</a>
         <a href="#about">About</a>
         <a href="#cards">Eventos Exclusivos</a>
-      </nav>
-
-      <div class="navigator">
         <button type="button" class="btn btn-outline-dark">Login</button>
         <button type="button" class="btn btn-outline-dark">Register</button>
-      </div>
+      </nav>
     </header>
     <main>
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -142,9 +143,10 @@
       <p>Noticias, eventos, relatos y mucho mas.</p>
       <p>Todos los derechos reservados &copy; 2024</p>
     </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

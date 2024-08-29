@@ -53,3 +53,10 @@ browseProvice.addEventListener("input", (e) => {
   );
   updateDirections(filteredDirections);
 });
+
+const openNavBtn = document.getElementById("openNavBtn");
+const navContainer = document.getElementById("navContainer");
+
+openNavBtn.addEventListener("click", () => {
+  navContainer.classList.toggle("nav-open-container");
+});
